@@ -1,0 +1,177 @@
+#jnProitem{
+	float: left;
+	width: 312px;
+	height: 560px;
+	display: inline;
+}
+#jnProitem .jdzoomWrap{
+	border: 1px solid #BBB;
+	cursor: pointer;
+	float: left;
+	position: relative;
+	margin-bottom: 10px;
+}
+#jnProitem span{
+	margin: 0 106px ;
+	margin-bottom: 0;
+}
+#jnProitem ul.imgList{
+	margin-top: 10px;
+	height: 80px;
+	overflow: hidden;
+}
+#jnProitem ul.imgList li{
+	float: left;
+	margin-right: 10px;
+}
+#jnProitem ul.imgList li img{
+   width: 60px;
+   height: 60px;
+   padding: 1px;
+   background: #EEE;
+   cursor: pointer;
+}
+#jnProitem ul.imgList li img:hover{
+	padding: 1px;
+	background: #999;
+}
+#jnProitem .tab{
+	margin-top: 0;
+	width: 310px;
+	/* height: 230px;  */
+	overflow: hidden;
+	clear: both;
+}
+.tab .hide{
+	display: none;
+}
+
+.tab .tab_menu{
+	clear: both;
+}
+.tab .tab_menu li{
+	float: left;
+	cursor: pointer;
+	padding: 1px 6px;
+	margin-right: 4px;
+	font-family: courier new,courier,monospace;/* 改字体 */
+    font-size: 12px;
+	border: 1px solid #898989;
+	border-bottom: none;
+	background: #F1F1F1;
+}
+.tab .tab_menu li:hover{
+	background:#DFDFDF;
+}
+.tab .tab_box{
+	float: left;
+  /*   clear: both;避免li浮在上面 */
+    border: 1px solid #898989;
+    font-family: courier new,courier,monospace;/* 改字体 */
+    font-size: 12px;
+}
+#jnDetails{
+	float: left;
+	width: 468px;
+	padding-left: 10px;
+}
+#jnDetails h4,li{
+	font-family: courier new,courier,monospace;/* 改字体 */
+    font-size: 12px;
+}
+#jnDetails .jnProDetailList>li{
+   line-height: 25px;
+   float: left;
+   width: 100%;
+}
+#jnDetails .jnProDetailList strong{
+	font-weight: bold;
+	font-size:14px;
+}
+#jnDetails .tbDetailPrice strong{
+	font-weight: 700;
+    color: #FF5500;
+    font: 24px Tahoma,Arial,Helvetica,sans-serif;/* 字体设置 */
+    padding-right: 5px;
+    vertical-align: middle;/* 让这个200 在垂直方向上  中间对其*/
+}
+   /* 颜色设置 */
+#jnDetails .pro_color strong{
+    font-weight: normal;
+}
+#jnDetails .pro_color li{
+	float: left;
+	margin-right: 10px;
+	width: 35px;
+	height: 35px;
+	border: 1px solid #BBB;
+}
+#jnDetails .pro_color li img{
+	width: 34px;
+	height: 34px;
+}
+#jnDetails .pro_color li:hover{
+	border: 1px solid #FF5500;
+}
+#jnDetails .pro_size li{
+	float: left;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #BBB;
+	margin-right: 10px;
+	font-size:14px;
+	line-height: 30px;
+	text-align: center;
+}
+#jnDetails .pro_number select{
+    display: block;
+}
+#jnDetails .pro_rating{
+	 font: 12px courier new,courier,monospace;/* 字体设置 */
+}
+#jnDetails .rating{/* ul */
+	position: relative;
+	width: 80px;
+	height: 16px;
+	background: url("../images/star-matrix.gif") no-repeat 0 0;
+}
+#jnDetails .rating li{
+   float: left;
+   text-indent: -999em;
+   cursor: pointer;
+	  width: 16px;
+	  height: 16px; 
+}
+#jnDetails .rating li>a{
+	position:absolute;
+	left: 0;
+	top: 0; 
+	width: 16px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+}
+#jnDetails #cart{
+	clear: both;
+	margin-top: 20px;
+}
+ #jnDetails #scar{
+ 	float:right;
+ 	position:relative;
+ 	width:100px;
+ 	border:1px solid #BBB;
+ }
+ #jnDetails #scar img{
+	width:20px;
+	height:20px;
+	
+} 
+#jnDetails #scar a{
+	font: 14px courier new,courier,monospace;/* 字体设置 */
+}
+#jnDetails #scar em{
+	position: absolute;
+   top:-3px;
+   right:0px;
+   color:red;
+}

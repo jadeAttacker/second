@@ -1,0 +1,236 @@
+ /* 定位和浮动的元素，不能把父元素撑起来 ，所以有时要清除浮动*/
+ /* 定位以后，其宽度不受父元素padding制约 */
+
+     #header{/* 目的是自适应，保持最宽 */
+         background: url("../images/headerbg.png")    scroll 0 0 #FFFFFF;/* 默认重复，背景图片尺寸可选 */
+         height: 105px;
+     }
+     #header .contWitch{
+         position: relative;
+         height: 105px;
+         width: 990px;
+         margin: 0 auto;
+         z-index: 100;
+         /* background-color: orange; */
+     }
+     #header .logo{
+        float: left; 
+        margin: 0 0 0 10px;
+        color: #FFF;
+       /*  line-height: 80px; */
+    }
+    #header input{
+       /*  margin: 20px auto  auto 40px; */
+       position: absolute;
+       left: 198px;
+       top: 20px;
+       height: 17px;
+       width: 200px;
+       padding: 3px 6px 5px 6px;
+       font-size: 14px;
+       color: #999;
+       font-family: courier new,courier,monospace;/* 改字体 */
+    }  
+
+    #header #skin{
+         float: right;
+         width: 120px;
+         background-color: #CCC;
+         padding: 4px;/* 对浮动的元素起作用，可以被子元素撑起来*/
+         margin: 10px;
+    }
+    #header #skin li{
+          float: left;
+          height: 15px;
+          width: 15px; 
+          margin-right: 5px;
+          background-image: url("../images/theme.gif");
+          text-indent: -9999px;
+          cursor: pointer;
+          overflow: hidden;
+    }
+    #header #skin li:nth-of-type(1){background-position: 0px 0px;}/* 背景图起始位置，不是偏移量 */
+    #header #skin li:nth-of-type(2){background-position: -100px 0px;}
+    #header #skin li:nth-of-type(3){background-position: -80px 0px; }
+    #header #skin li:nth-of-type(4){background-position: -60px 0px; }
+    #header #skin li:nth-of-type(5){background-position: -40px 0px;}
+    #header #skin li:nth-of-type(6){background-position: -20px 0px;}
+    #header #skin li:nth-of-type(1).selected {background-position: 0px 15px;}
+    #header #skin li:nth-of-type(2).selected {background-position: -100px 15px;}
+    #header #skin li:nth-of-type(3).selected {background-position: -80px 15px; }
+    #header #skin li:nth-of-type(4).selected {background-position: -60px 15px; }
+    #header #skin li:nth-of-type(5).selected {background-position: -40px 15px;}
+    #header #skin li:nth-of-type(6).selected {background-position: -20px 15px;}
+    .mainNav{
+        position: absolute;
+        top: 69px;
+        left: 0;
+        width: 100%;
+        background-color: #4A4A4A;
+        height: 36px;
+        line-height: 36px;
+    }
+    .nav{
+         display: inline;
+         margin-left: 25px;
+         float: left;
+    }
+    .nav li{
+        float: left;
+        margin-right: 14px;
+        position: relative;
+    }
+    .nav li>a{
+        text-decoration: none;
+        font-weight: 700;
+        color: #FFF;
+        font-size: 14px;
+        font-family: courier new,courier,monospace;/* 改字体 */
+        padding: 2px 8px;
+    }
+    .nav li>a:hover{
+        background-color: orange;
+        text-decoration: underline;
+    }
+   
+    .subItem{
+        position: absolute;
+        top: 36px;
+        left: 0px;
+        display: none; 
+        background-color: #FFF;
+        border: 1px solid #B1B1B1;
+        float: left;
+        height: auto !important;/* 定义优先级 */
+        min-height: 100px;
+        padding: 0 12px;
+        width: 450px;
+     }
+      .subItem dl{
+        border-top: 1px dashed #C4C4C4;
+        overflow: hidden;
+        padding: 8px 0;
+        float: left;
+        height: 49px; 
+     }
+     .subItem dt{
+         font-weight: bold;
+         line-height: 14px;
+         padding: 8px 3px;
+         width: 75px;
+         text-align: center;
+         float: left;
+         font-family: courier new,courier,monospace;/* 改字体 */
+         font-size: 14px;
+     }
+      .subItem dt>a{
+          color: #000;
+          font-weight: 700;
+          font-size:12px;
+          padding-top:5px;
+          text-decoration: none;
+      }
+      .subItem dd{
+          float: left;
+          width: 365px;
+     }
+     .subItem em {/* 块状 */
+          border-right: 1px solid #CCCCCC;
+          float: left;
+          font-style: normal;
+          height: 14px;
+          line-height: 14px;
+          margin: 5px  0;
+          padding: 0 8px;
+     }
+      .subItem em a{
+          color: #666;
+          white-space: nowrap;/* 不换行 */
+          font-size:12px;
+          font-weight:normal;
+          text-decoration: none;
+      }
+     .subItem em a:hover{
+         text-decoration: underline;
+         background-color: orange;
+      }
+      section{/* 以后做响应式 */
+        width:100%;
+      }
+      .JaneShop{/* 包含四部分内容的外层 */
+         margin: 0 auto;
+         width: 990px;/* 先不做响应式 */
+         padding: 10px 0;
+         overflow: auto;
+         position: relative;
+      }
+       #Lside{ 
+        float: left;
+        border:1px solid #C4C4C4;
+        width: 187px;
+        margin: 0 11px 0 0;
+      } 
+      #Lside h2{
+        width: 187px;
+        background-color: #6E6E6E;
+        height: 30px;
+        line-height: 30px;
+        color: #fff;
+        font-size: 12px;
+        text-indent: 13px;
+        margin-bottom: 2px;
+      }
+       #Lside .classification{
+           width: 165px;
+           margin-bottom: 2px;
+           height: 130px;
+           padding-left: 10px;
+       }
+        #Lside .classification h3{
+           font-size: 12px;
+           height: 24px;
+           line-height: 24px;
+           width: 164px;
+           border-bottom:1px solid #EEE;
+       }
+        #Lside .classification ul{
+          padding: 0 2px 8px;
+          float: left;
+       }
+        #Lside .classification  li{
+          float: left;
+          height: 24px;
+          line-height: 24px;
+          color: #AEADAE;
+          width: 79px;
+          font-weight: normal;
+          font-size: 12px;
+          position: relative;
+       }
+        #Lside .classification  a{
+          color: #444444;
+       }
+        #Lside .classification  a:hover{
+          color: #008cd7;
+       }
+        #Lside .classification  a.promoted{
+          color: #F9044E;
+       } 
+        #Lside .classification  .hot{
+          height: 16px;
+          width: 21px;
+          display: inline-block;
+          background:url("../images/hot.gif") no-repeat;
+        }
+      footer{
+        clear: both;
+        text-align: center;
+        font-weight: 700px;
+      }
+
+      
+      
+   
+    
+    
+

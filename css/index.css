@@ -1,0 +1,202 @@
+#RsidePictureTurn{
+	float: left;
+	width: 550px;
+	height: 321px;
+	overflow: hidden;/* 加隐藏 */
+	position: relative;	
+}
+#RsidePictureTurn img{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#RsidePictureTurn div{
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	width: 550px;
+}
+#RsidePictureTurn div a{
+	height: 32px;
+	width: 79px;
+	display:inline- block;
+	float: left; /* 浮动是必须的，否则a会落起来，原因未知 */
+	color: #FFF;
+	background-color:#444;
+    margin-right: 1px;
+	padding: 5px 15px;
+	overflow: hidden;
+	font-size: 11px;
+	text-align: center;
+	opacity: 0.7;
+}
+#RsidePictureTurn div a:hover{
+	background-color:#37A7D7;
+	opacity: 1;
+}
+#RsidePictureTurn div a em{
+   display: block;
+   height: 16px;
+   overflow: hidden;
+   width: 79px;
+   cursor: pointer;
+}
+.last{
+	margin: 0;
+	width: 80px;
+}
+#RsidePictureTurn a.chos{
+	background: url("../images/adindex.gif") no-repeat center 39px #37A7D7;
+	color: #FFFFFF;
+}
+#RsideNotice{
+	float: left;
+	width: 230px;
+	height: 176px;
+	padding-left: 10px;
+}
+.JS_css3 img{
+	-webkit-transition:10s all;
+    transition: 10s all; 
+}
+.JS_css3:hover img{
+	-webkit-transform:rotate(720deg);
+	transform: rotate(720deg);
+}
+#RsideBrand{
+	float: left;
+	width: 230px;
+	height: 136px;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+#RsideBrand h2{
+	 font-size: 12px;
+	 border: 1px #DFDFDF solid;
+	 font-family: courier new,courier,monospace;/* 改字体 */
+	 height: 23px;
+	 line-height: 25px;
+	 text-indent: 12px;
+}
+#RsideBrand ul{
+	 border: 1px #DFDFDF solid;
+	 border-top:0; 
+	 position: relative;
+}
+#RsideBrand ul li{
+	padding-left: 10px;
+	height: 22px;
+	line-height: 22px;
+}
+#RsideBrand ul a{
+	font-size: 11px;
+	color: #666;
+}
+#RsideBrand ul a:hover{
+	color: #008cd7;
+}
+#tooltip{
+   position: absolute;
+   border: 1px solid #333;
+   background-color:#f7f5d1;
+   padding: 1px;
+   color: #333;
+   display: none;
+   font-size: 12px;
+}
+#jnBrand{
+	float: left;
+	height: 230px;
+	width: 790px;
+	margin: 10px 0 0;
+	overflow: hidden; 
+}
+#jnBrandTab{
+	border-bottom: 1px solid #E4E4E4;
+	height: 29px;
+	width: 790px;
+	position: relative;
+	float: left;
+}
+#jnBrandTab h2{
+	font-family: courier new,courier,monospace;/* 改字体 */
+	font-size: 12px;
+	height: 28p;
+	line-height: 28px;
+	left: 0;
+	position: absolute;
+}
+#jnBrandTab  ul{
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+#jnBrandTab li{
+	float: left;
+	margin: 0 10px 0 0;
+	position: relative;
+	width: 44px;
+	height: 20px;
+}
+#jnBrandTab li a{
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	height: 20px;
+	line-height: 20px;
+	padding: 0 10px;
+	font-size: 12px;
+	background-color: #E4E4E4;
+	color: #000000;
+}
+#jnBrandTab li.chos{
+	background: url("../images/chos.gif") no-repeat scroll 50% bottom transparent;
+	padding-bottom: 3px;
+}
+#jnBrandTab li.chos a{
+	color: #FFF;
+	background-color: #FA5889;
+}
+#jnBrandContent{
+	overflow: hidden;
+	float: left;
+	height: 192px;
+	margin: 8px 5px;
+	width: 790px;
+	position: relative;
+}
+#jnBrandList{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 3200px;
+	padding-left: 10px;
+}
+#jnBrandList ul li{
+	float: left;
+	margin:0 10px 0 0;
+	position: relative;
+}
+#jnBrandContent  li figcaption{
+	text-align: center;
+	background-color: #EFEFEF;
+	color: #666;
+	font-size: 14px;
+	height: 24px;
+	line-height: 24px;
+	font-family: courier new,courier,monospace;/* 改字体 */
+
+}
+#jnBrandContent  li figcaption:hover{
+	color: #008cd7;
+}
+.imgOver{
+	background: url("../images/zoom.gif") no-repeat 50% 50% ;
+	filter: alpha(opacity=60);
+	opacity: 0.6;
+}
+/* 缺少内容 */
+/* 点击，无缝切换 */
+
+
+
