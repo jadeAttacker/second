@@ -12,5 +12,4 @@ $sql="insert into shoppingcar values(null,'{$name}',{$price},'{$picture}',{$time
 mysqli_query($link,$sql);
 mysqli_close($link);
 echo "成功！";
-
 ?>
